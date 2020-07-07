@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            border: 0;
+            margin: 0;
+            padding: 0;
+        }
+.frontBox {
+    width: 300px;
+    height: 500px;
+    background: red;
+    position: fixed;
+    left: 50%;
+    top: 10px;
+    z-index: 1;
+    transform: translateX(-50%);
+    transition: all .1s;
+    transform-origin: 50% 200%;
+}
+.backBox {
+    width: 300px;
+    height: 500px;
+    background: red;
+    position: fixed;
+    left: 50%;
+    top: 10px;
+    z-index: 0;
+    transform: translateX(-50%);
+}
+        
+    </style>
+</head>
+<body>
+    <div class="frontBox">
+
+    </div>
+    <div class="backBox">
+
+    </div>
+
+    <script>
+let frontBox    = document.getElementsByClassName('frontBox')[0]
+let backBox     = document.getElementsByClassName('backBox')[0]
+
+let midcourtLine = 0 // document.body.offsetWidth / 2
+
+
+frontBox.addEventListener('touchstart', event => {
+    midcourtLine = event.touches[0].clientX
+})
+
+frontBox.addEventListener('touchmove', event => {
+    let x = event.touches[0].clientX
+    if (x > midcourtLine) {
+        console.log('right')
+    } else {
+        console.log('left')
+    }
+    frontBox.style.transform = `translateX(${(x - midcourtLine)/5 - 50}%) rotate(${(x - midcourtLine) / 5}deg)`
+})
+
+    </script>
+</body>
+</html>

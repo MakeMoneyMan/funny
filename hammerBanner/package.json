@@ -1,0 +1,19 @@
+{
+  "name": "hammer_banner",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MakeMoneyMan/hammer_banner.git"
+  },
+  "author": "MakeMoneyMan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MakeMoneyMan/hammer_banner/issues"
+  },
+  "homepage": "https://github.com/MakeMoneyMan/hammer_banner#readme"
+}

@@ -1,0 +1,53 @@
+* {
+  font-family: microsoft yahei;
+}
+
+.main {
+  border: #000 1px solid;
+  float: left;
+  perspective:200px;
+  margin: 100px;
+  overflow:hidden;
+}
+
+.warp {
+  width: 1200px;
+  height: 400px;
+  background: #000;
+  padding: 30px;
+  float: left;
+  transform-style:preserve-3d;
+  perspective:200px;
+  transition: transform .1s;
+  box-sizing: border-box;
+}
+
+.p_1,.p_2,.p_3{
+  color: #00ff66;
+  transform: scale(0.5);
+}
+
+.p_1 {
+  margin: 120px 0 0 4px;
+  font-size: 48px;
+  transform:translateZ(65px) scale(0.3);
+}
+
+.p_2 {
+  margin: -40px 0 0 92px;
+  transform:translateZ(0px);
+}
+
+.p_3 {
+  margin: 0px 0 0 -130px;
+  font-size: 36px;
+  transform:translateZ(40px) scale(0.35);
+}
+.img_1{
+    margin: -623px 0 0 164px;
+    transform: translateZ(75px) scale(0.25);
+}
+.img_2{
+  margin: -1450px 0 0 750px;
+  transform:translateZ(10px) scale(0.3);
+}

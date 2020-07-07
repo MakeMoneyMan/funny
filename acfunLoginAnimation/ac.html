@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+html, body{
+
+    height: 100%;
+    padding: 100px;
+}    
+.body {
+
+    width:300px;
+    height:200px;
+perspective: 800px;
+/* background: red; */
+}
+.main{
+    width:300px;
+    height:200px;
+    
+}
+.child{
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    padding: 20px;
+
+}
+.child input {
+
+margin-bottom: 10px;
+
+}
+.m{animation: m 1.2s 1 linear;}
+.c{animation: c 1.2s 1 linear;}
+@keyframes m{
+    0%{transform: translate3d(0px,0px,0px);
+    opacity:1;
+    }
+    25%{transform: translate3d(200px,0px,-150px);}
+    50%{transform: translate3d(0px,0px,-300px);
+    opacity: 0;
+    }
+    75%{transform: translate3d(-200px,0px,-150px);}
+    100%{transform: translate3d(0px,0px,0px);
+    opacity: 1;
+    }
+}
+@keyframes c{
+    0%{transform:rotateY(0deg)}
+    100%{transform:rotateY(360deg)}
+}
+
+    </style>
+</head>
+<body>
+<div class="body">
+    <div class="main">
+        <div class="child">
+            <h3>&登录</h3>
+            <input type="text" name="" id="">
+            <input type="text" name="" id=""><br>
+            <input type="button" class="button" value="登录" onclick="login();">
+            <script>
+            function login(){
+                document.getElementsByClassName('main')[0].className = 'main m';
+                document.getElementsByClassName('child')[0].className = 'child c';
+                setTimeout(function(){
+                    document.getElementsByClassName('main')[0].className = 'main';
+                    document.getElementsByClassName('child')[0].className = 'child';
+
+
+                }, 2000);
+            }
+            </script>
+        </div>
+    </div>
+</div>
+</body>
+</html>
