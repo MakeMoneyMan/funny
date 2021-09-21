@@ -1,0 +1,11 @@
+查询场地列表
+POST https://tytapp.quntitong.cn/sportinterNew/androidstadium/queryStoreByType.do HTTP/1.1
+Host: tytapp.quntitong.cn
+Connection: keep-alive
+Content-Length: 62
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36 MicroMessenger/7.0.9.501 NetType/WIFI MiniProgramEnv/Windows WindowsWechat
+content-type: application/x-www-form-urlencoded
+Referer: https://servicewechat.com/wxe350a6af6d22b9e8/47/page-frame.html
+Accept-Encoding: gzip, deflate, br
+
+cgCode=0020C061256&sportCode=003&openDate=2021-09-22&booking=Y

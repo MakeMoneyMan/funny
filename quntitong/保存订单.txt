@@ -1,0 +1,28 @@
+保存订单
+POST https://tytapp.quntitong.cn/sportinterNew/androidorder/saveOrder.do HTTP/1.1
+Host: tytapp.quntitong.cn
+Connection: keep-alive
+Content-Length: 418
+User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36 MicroMessenger/7.0.9.501 NetType/WIFI MiniProgramEnv/Windows WindowsWechat
+content-type: application/x-www-form-urlencoded
+Referer: https://servicewechat.com/wxe350a6af6d22b9e8/47/page-frame.html
+Accept-Encoding: gzip, deflate, br
+
+userID:8a42f49278689f8f0178f8ff854a357a
+cgId:402881b441a660630141a712b12f0046
+cgCode:0020C061256
+cgtype:3
+terminal:10
+openDate:2021-09-22
+ordertotal:120
+os:wx
+queryType:android
+lon:113.3685116666855
+lat:23.130485599564228
+subAdress:
+sportsNum:5
+citys:440100
+num8a42f4877bf3f4c5017bfec9a42b1064:1
+num8a42f4877bf3f4c5017bfec9a42b1065:1
+storeIds:8a42f4877bf3f4c5017bfec9a42b1064%2C8a42f4877bf3f4c5017bfec9a42b1065
+quanid:
