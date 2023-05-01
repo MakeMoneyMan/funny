@@ -1,11 +1,65 @@
 检查订单
-POST https://tytapp.quntitong.cn/sportinterNew/androidorder/checkOrder.do HTTP/1.1
-Host: tytapp.quntitong.cn
+POST https://www.quntitong.cn/sportinterNew/androidorder/checkOrder.do HTTP/1.1
+Host: www.quntitong.cn
 Connection: keep-alive
-Content-Length: 248
-User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36 MicroMessenger/7.0.9.501 NetType/WIFI MiniProgramEnv/Windows WindowsWechat
-content-type: application/x-www-form-urlencoded
-Referer: https://servicewechat.com/wxe350a6af6d22b9e8/47/page-frame.html
+Content-Length: 286
+referer: https://servicewechat.com/wxe350a6af6d22b9e8/111/page-frame.html
+xweb_xhr: 1
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 MicroMessenger/7.0.20.1781(0x6700143B) NetType/WIFI MiniProgramEnv/Windows WindowsWechat/WMPF XWEB/6763
+Content-Type: application/x-www-form-urlencoded
+Accept: */*
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
 Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh
 
-userID=8a42f49278689f8f0178f8ff854a357a&cgId=402881b441a660630141a712b12f0046&cgCode=0020C061256&cgtype=3&openDate=2021-09-22&ordertotal=120&queryType=android&storeIds=8a42f4877bf3f4c5017bfec9a42b1064%2C8a42f4877bf3f4c5017bfec9a42b1065&citys=440100
+userID=8a42f49278689f8f0178f8ff854a357a&
+cgId=402881b441a660630141a712b12f0046&
+cgCode=0020C061256&
+cgtype=3&
+openDate=2023-04-28&
+ordertotal=130&
+queryType=android&
+storeIds=8a42f48787a4038c0187aed9f549154b%2C8a42f48787a4038c0187aed9f54a1550&
+citys=440100&
+sign=CF4E92861C26F4E0C0C9CB39AFD086E7
+
+
+userID：用户ID，用于标识用户身份。
+cgId：场馆ID，用于标识要检查订单的场馆。
+cgCode：场馆编码，用于标识场馆的唯一编码。
+cgtype：场馆类型，用于标识场馆的类型。
+openDate：预定的开放日期，格式为YYYY-MM-DD。
+ordertotal：订单总金额。
+queryType：查询类型，表示查询方式，这里为android。
+storeIds：场馆ID列表，用于标识要检查订单的场馆列表，多个ID之间使用逗号分隔。
+citys：城市编码，用于标识场馆所在的城市编码。
+
+
+
+POST https://www.quntitong.cn/sportinterNew/androidorder/checkOrder.do HTTP/1.1
+Host: www.quntitong.cn
+Connection: keep-alive
+Content-Length: 286
+referer: https://servicewechat.com/wxe350a6af6d22b9e8/111/page-frame.html
+xweb_xhr: 1
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 MicroMessenger/7.0.20.1781(0x6700143B) NetType/WIFI MiniProgramEnv/Windows WindowsWechat/WMPF XWEB/6763
+Content-Type: application/x-www-form-urlencoded
+Accept: */*
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh
+
+userID=8a42f49278689f8f0178f8ff854a357a&
+cgId=402881b441a660630141a712b12f0046&
+cgCode=0020C061256&
+cgtype=3&
+openDate=2023-04-28&
+ordertotal=130&
+queryType=android&
+storeIds=8a42f48787a4038c0187aeda6eb5198e%2C8a42f48787a4038c0187aeda6eb51992&
+citys=440100&
+sign=C1D969ABBC06EE1FEB5F08F695DEF14D

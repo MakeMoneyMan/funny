@@ -5,7 +5,8 @@ import time
 
 def order(cd1, cd2):
     url = "https://tytapp.quntitong.cn/sportinterNew/androidorder/saveOrder.do"
-    data = '{"userID":"8a42f49278689f8f0178f8ff854a357a","cgId":"402881b441a660630141a712b12f0046","cgCode":"0020C061256","cgtype":"3","terminal":"10","openDate":"2021-09-24","ordertotal":"140","os":"wx","queryType":"android","lon":"113.3685116666855","lat":"23.130485599564228","subAdress":"","sportsNum":"5","citys":"440100","num' + cd1 + '":"1","num' + cd2 + '":"1","storeIds":"' + cd1 + '%2C'+ cd2 + '","quanid":""}'
+    # data = '{"userID":"8a42f49278689f8f0178f8ff854a357a","cgId":"402881b441a660630141a712b12f0046","cgCode":"0020C061256","cgtype":"3","terminal":"10","openDate":"2021-09-24","ordertotal":"140","os":"wx","queryType":"android","lon":"113.3685116666855","lat":"23.130485599564228","subAdress":"","sportsNum":"5","citys":"440100","num' + cd1 + '":"1","num' + cd2 + '":"1","storeIds":"' + cd1 + '%2C'+ cd2 + '","quanid":""}'
+    data = '{"userID":"c5b642b0a1926542e053fd74c20a400a","cgId":"402881b441a660630141a712b12f0046","cgCode":"0020C061256","cgtype":"3","terminal":"10","openDate":"2021-09-24","ordertotal":"140","os":"wx","queryType":"android","lon":"113.3685116666855","lat":"23.130485599564228","subAdress":"","sportsNum":"5","citys":"440100","num' + cd1 + '":"1","num' + cd2 + '":"1","storeIds":"' + cd1 + '%2C'+ cd2 + '","quanid":""}'
     result = requests.post(url, data)
     print(result.text)
 
@@ -16,17 +17,17 @@ def order(cd1, cd2):
 
 def check():
     url = "https://tytapp.quntitong.cn/sportinterNew/androidstadium/queryStoreByType.do"
-    data = { "cgCode": "0020C061256", "sportCode": "003", "openDate": "2021-09-24", "booking": "Y", }
+    data = { "cgCode": "0020C061256", "sportCode": "003", "openDate": "2021-09-30", "booking": "Y", }
 
     result = requests.post(url, data)
-    if(len(result.text) > 20):
+    if(len(result.text) > 200):
         jsonData = json.loads(result.text)
 
         cd1 = ''
         cd2 = ''
         for item in jsonData:
             print(item['stadiumField']['fieldName'])
-            if(item['stadiumField']['fieldName'] == '室外场地AA'):
+            if(item['stadiumField']['fieldName'] == '室外场地BB'):
                 for storeItem in item['storeList']:
                     print(storeItem['startTime'])
                     if(storeItem['startTime'] == '10:00'):

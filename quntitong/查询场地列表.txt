@@ -1,11 +1,18 @@
+写一段python代码请求这个接口，并把结果转化为JSON格式，并保存为txt格式的文件。
 查询场地列表
-POST https://tytapp.quntitong.cn/sportinterNew/androidstadium/queryStoreByType.do HTTP/1.1
-Host: tytapp.quntitong.cn
+POST https://www.quntitong.cn/sportinterNew/androidstadium/queryStoreByType.do HTTP/1.1
+Host: www.quntitong.cn
 Connection: keep-alive
-Content-Length: 62
-User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/53.0.2785.143 Safari/537.36 MicroMessenger/7.0.9.501 NetType/WIFI MiniProgramEnv/Windows WindowsWechat
-content-type: application/x-www-form-urlencoded
-Referer: https://servicewechat.com/wxe350a6af6d22b9e8/47/page-frame.html
+Content-Length: 100
+referer: https://servicewechat.com/wxe350a6af6d22b9e8/111/page-frame.html
+xweb_xhr: 1
+user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.102 Safari/537.36 MicroMessenger/7.0.20.1781(0x6700143B) NetType/WIFI MiniProgramEnv/Windows WindowsWechat/WMPF XWEB/6763
+Content-Type: application/x-www-form-urlencoded
+Accept: */*
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
 Accept-Encoding: gzip, deflate, br
+Accept-Language: zh-CN,zh
 
-cgCode=0020C061256&sportCode=003&openDate=2021-09-22&booking=Y
+cgCode=0020C061256&sportCode=003&openDate=2023-04-27&booking=Y&sign=98E0160753A22F8916F9A81BE5C70782
